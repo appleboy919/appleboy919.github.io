@@ -1,7 +1,8 @@
 ---
-title: "Welcome to Jekyll!"
-date: 2021-01-19 22:49:28 -0400
-categories: jekyll update
+title: "First Post"
+categories: github.io
+layout: archive
+tags: [github.io, minimal-mistakes, jekyll]
 ---
 
 Created blog using github and minimal-mistake theme.
