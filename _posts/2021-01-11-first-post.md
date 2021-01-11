@@ -1,7 +1,7 @@
 ---
 title: "Welcome to Jekyll!"
-date: 2017-10-20 08:26:28 -0400
-categories: jekyll update
+date: 2017-10-20 22:45:28 -0400
+categories: jekyll
 ---
 
 Created blog using github and minimal-mistake theme.
