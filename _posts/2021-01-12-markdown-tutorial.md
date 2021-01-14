@@ -25,11 +25,13 @@ last_modified_at: 2021-01-14
 
 # 2. Adding new posts on Github Pages
 
-1. Create a new .md file in _Your-Repository/\_posts_ directory
-   - Name the .md file as _YYYY-MM-DD-NAME-OF-POST_
+## 1. Create a new .md file in _Your-Repository/\_posts_ directory
 
-2. Add YAML frontmatter at the top of the file
-  - Front-matter Link: <https://jekyllrb.com/docs/front-matter/>
+- Name the .md file as _YYYY-MM-DD-NAME-OF-POST_
+
+## 2. Add YAML frontmatter at the top of the file
+
+- Front-matter Link: <https://jekyllrb.com/docs/front-matter/>
 
 ```
 ex) Current post's frontmatter
