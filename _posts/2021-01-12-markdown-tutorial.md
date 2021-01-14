@@ -25,7 +25,7 @@ last_modified_at: 2021-01-14
 
 # 2. Adding new posts on Github Pages
 
-## 1. Create a new .md file in _Your-Repository/\_posts_ directory
+## 1. Create a new file in _Your-Repository/\_posts_ directory
 
 - Name the .md file as _YYYY-MM-DD-NAME-OF-POST_
 
@@ -46,7 +46,6 @@ tags:
   - [Github.io, Markdown]
 
 toc: true
-toc_sticky: true
 
 date: 2021-01-12
 last_modified_at: 2021-01-14
