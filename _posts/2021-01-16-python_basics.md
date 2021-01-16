@@ -20,13 +20,20 @@ This is a self note while taking the online course from **LinkedIn Learning: Lea
 # 1. Variables
 
 ```python
-f = 1234
+f = 1234 # global variable
 def someFunction():
-    f="def"
+    f="def" # local variable
     print(f)
 
 someFunction()
 print(f)
+```
+
+result
+
+```
+def
+1234
 ```
 
 ---
