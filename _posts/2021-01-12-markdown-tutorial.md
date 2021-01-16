@@ -10,7 +10,7 @@ tags:
 toc: true
 
 date: 2021-01-12
-last_modified_at: 2021-01-14
+last_modified_at: 2021-01-16
 ---
 
 # 1. What is Markdown?
@@ -31,6 +31,11 @@ last_modified_at: 2021-01-14
 
    - Front-matter Link: <https://jekyllrb.com/docs/front-matter/>
 
+3. Add the contents below the front-matter
+   - Links for Markdown Syntax:
+     - (English) <https://daringfireball.net/projects/markdown/>
+     - (Korean) <https://gist.github.com/ihoneymon/652be052a0727ad59601>
+
 ```
 ex) Current post's frontmatter
 
@@ -49,11 +54,6 @@ date: 2021-01-12
 last_modified_at: 2021-01-14
 ---
 ```
-
-3. Add the contents below the front-matter
-   - Links for Markdown Syntax:
-     - (English) <https://daringfireball.net/projects/markdown/>
-     - (Korean) <https://gist.github.com/ihoneymon/652be052a0727ad59601>
 
 ---
 
