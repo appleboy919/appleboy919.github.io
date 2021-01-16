@@ -19,7 +19,7 @@ This is a self note while taking the online course from **LinkedIn Learning: Lea
 
 # 1. Variables
 
-```Python
+```python
 f = 1234
 def someFunction():
     f="def"
