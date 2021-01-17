@@ -37,3 +37,5 @@ def
 ```
 
 ---
+
+# 2. Functions
