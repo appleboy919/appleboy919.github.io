@@ -60,3 +60,21 @@ def argument_func(arg1, arg2):
 def cube(x):
     return x*x*x
 ```
+
+- Function with default values for an argument
+
+```python
+def power(num, a=1): # a has a default value 1
+    result = 1
+    for i in range(a):
+        result = result * num
+    return result
+```
+
+# function with variable number of arguments
+
+def multi_add(\*args):
+result = 0
+for x in args:
+result = result + x
+return result
