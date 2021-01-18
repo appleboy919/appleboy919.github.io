@@ -29,7 +29,7 @@ someFunction()
 print(f)
 ```
 
-result
+result:
 
 ```
 def
@@ -39,3 +39,24 @@ def
 ---
 
 # 2. Functions
+
+- Basic function
+
+```python
+def basic_func():
+    print("This is basic function")
+```
+
+- Function with arguments
+
+```python
+def argument_func(arg1, arg2):
+    print("This function takes", arg1, "and", arg2)
+```
+
+- Function that returns a value
+
+```python
+def cube(x):
+    return x*x*x
+```
