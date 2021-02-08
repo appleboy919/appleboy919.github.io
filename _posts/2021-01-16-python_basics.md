@@ -33,7 +33,7 @@ someFunction()
 print(f)
 ```
 
-result:
+Result:
 
 ```
 def
@@ -126,4 +126,28 @@ Result:
 ```
 a is b
 1 is in A
+```
+
+---
+
+# 5. Loop
+
+- enumerate() function for each index and value in a collection
+
+```python
+days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+for i, d in enumerate(days):
+    print(i, d)
+```
+
+Result:
+
+```
+0 Mon
+1 Tue
+2 Wed
+3 Thu
+4 Fri
+5 Sat
+6 Sun
 ```
