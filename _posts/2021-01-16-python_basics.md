@@ -10,10 +10,14 @@ tags:
 toc: true
 
 date: 2021-01-16
-last_modified_at: 2021-01-16
+last_modified_at: 2021-02-08
 ---
 
-This is a self note while taking the online course from **LinkedIn Learning: Learning Python** by _Joe Marini_
+This is a self note while taking the online course from:
+
+**LinkedIn Learning: Learning Python** by _Joe Marini_
+
+**LinkedIn Learning: Python Essential Training** by _Bill Weinman_
 
 ---
 
@@ -78,3 +82,48 @@ result = 0
 for x in args:
 result = result + x
 return result
+
+---
+
+# 4. Conditional
+
+- can assign values with conditional statements
+
+```python
+x = 10
+y = 11
+st = "x is less than y" if (x < y) else "x is greater than or the same as y"
+print(st)
+```
+
+Result:
+
+```
+x is less than y
+```
+
+- is, in kewords
+
+```python
+# A is B
+a = 1
+b = 1
+if a is b:
+    print('a is b')
+else:
+    print('a is not b')
+
+# a is in A
+A = [1,2,3,4]
+if 1 in A:
+    print('1 is in A')
+else:
+    print('1 is not in A')
+```
+
+Result:
+
+```
+a is b
+1 is in A
+```
