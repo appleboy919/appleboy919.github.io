@@ -230,6 +230,24 @@ print("range(5, 30, 5) is {}".format(range(5, 30, 5)))
 z[0] = 0 # this line is also an error -> range sequence is immutable
 ```
 
+- Accessing specific range of sequence
+
+```python
+SSN = "12121515"
+
+print("first four digit: " + SSN[:4])
+print("last four digit: " + SSN[-4:])
+print("except last two digit: " + SSN[:-2])
+```
+
+```
+(Result)
+
+first four digit: 1212
+last four digit: 1515
+except last two digit: 121215
+```
+
 - Dictionary
 
 ```python
