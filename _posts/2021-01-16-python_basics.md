@@ -191,3 +191,103 @@ print(type(y))
 y is 0.00
 <class 'decimal.Decimal'>
 ```
+
+---
+
+# 6. Sequence Type
+
+- List
+
+```python
+x = [1, 2, 3, 4]  # list is created with [] brackets
+x[0] = 0  # list is mutable
+for i in x:
+    print("i is {}".format(i))
+print("list x is {}".format(x))
+```
+
+- Tuple
+
+```python
+y = (1, 2, 3, 4)  # tuple is created with () parentheses
+for j in y:
+    print("j is {}".format(j))
+print("tuple y is {}".format(y))
+
+y[0] = 0  # this line is an error -> tuple is immutable
+```
+
+- range()
+
+```python
+z = range(5)  # range function creates a sequence from 0 to n-1
+
+for k in z:
+    print("k is {}".format(k))
+
+print("range(5, 30, 5) is {}".format(range(5, 30, 5)))
+
+z[0] = 0 # this line is also an error -> range sequence is immutable
+```
+
+- Dictionary
+
+```python
+# dictionary: searchable sequence with key value pairs
+w = {'one': 1, 'two': 2, 'three': 3, 'four': 4}
+
+# prints only keys
+for l in w:
+    print('l is {}'.format(l))
+
+# prints out tuple of key and value
+for k, v in w.items():
+    print('k: {}, v: {}'.format(k, v))
+
+# dictionary is mutable
+w['one'] = 101
+print('dictionary is mutable:')
+print('k: one, v: {}'.format(w['one']))
+```
+
+```
+(Result)
+
+l is one
+l is two
+l is three
+l is four
+k: one, v: 1
+k: two, v: 2
+k: three, v: 3
+k: four, v: 4
+dictionary is mutable:
+k: one, v: 101
+```
+
+---
+
+# 7. Object
+
+```python
+class Dog:
+    sound = "Woof-Woof"
+    walking = "Walks like a dog"
+
+    # self = reference keyword for object
+    def bark(self):
+        print(self.sound)
+
+    def walk(self):
+        print(self.walking)
+
+
+def main():
+    moly = Dog()
+    moly.bark()
+    moly.walk()
+
+
+if __name__ == "__main__":
+    main()
+```
