@@ -309,3 +309,10 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+```
+(Result)
+
+Woof-Woof
+Walks like a dog
+```
