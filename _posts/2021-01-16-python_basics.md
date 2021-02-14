@@ -87,7 +87,7 @@ def multi_add(*args):
 
 ---
 
-# 4. Conditional
+# 3. Conditional
 
 - can assign values with conditional statements
 
@@ -132,7 +132,7 @@ a is b
 
 ---
 
-# 5. Loop
+# 4. Loop
 
 - enumerate() function for each index and value in a collection
 
@@ -152,4 +152,42 @@ Result:
 4 Fri
 5 Sat
 6 Sun
+```
+
+---
+
+# 5. Numeric
+
+1. float type --> sacrificing accuracty for precision
+2. DO NOT USE FLOAT FOR ACCURACY ex) Money
+
+- Problem with calculating float numbers
+
+```python
+x = .1 + .1 + .1 - .3  # in a real world, this should be zero
+print('x is {}'.format(x))  # not actually zero (almost zero)
+print(type(x))
+```
+
+```
+x is 5.551115123125783e-17
+<class 'float'>
+```
+
+- Use Decimal module for accurate calculation
+
+```python
+from decimal import *
+
+# use modules for accuracy
+a = Decimal('.10')
+b = Decimal('.30')
+y = a + a + a - b
+print('y is {}'.format(y))
+print(type(y))
+```
+
+```
+y is 0.00
+<class 'decimal.Decimal'>
 ```
