@@ -10,7 +10,7 @@ tags:
 toc: true
 
 date: 2021-01-16
-last_modified_at: 2021-02-08
+last_modified_at: 2021-02-14
 ---
 
 This is a self note while taking the online course from:
@@ -75,13 +75,15 @@ def power(num, a=1): # a has a default value 1
     return result
 ```
 
-# function with variable number of arguments
+- Function with variable number of arguments
 
-def multi_add(\*args):
-result = 0
-for x in args:
-result = result + x
-return result
+```python
+def multi_add(*args):
+    result = 0
+    for x in args:
+        result = result + x
+    return result
+```
 
 ---
 
