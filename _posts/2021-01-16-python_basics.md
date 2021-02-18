@@ -10,7 +10,7 @@ tags:
 toc: true
 
 date: 2021-01-16
-last_modified_at: 2021-02-14
+last_modified_at: 2021-02-18
 ---
 
 This is a self note while taking the online course from:
@@ -160,6 +160,7 @@ Result:
 
 1. float type --> sacrificing accuracty for precision
 2. DO NOT USE FLOAT FOR ACCURACY ex) Money
+3. Numeric types (int, float, decimal) are **immutable**!
 
 - Problem with calculating float numbers
 
