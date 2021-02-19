@@ -48,7 +48,6 @@ def multi_add(*args):
 - passing list, dictionareis as arg => **\*list**, **\*\*dict**
 
 ```python
-
 # variable args for list
 def arg_list(*args):
     if len(args):
@@ -109,4 +108,35 @@ three, 3
 6, six
 
 empty dictionary
+```
+
+## 4. Generator
+
+- Generator is a special class of function that serves as an iterator (returns stream of values)
+- Use "yield" keword
+
+```python
+# A generator which works as an inclusive range function
+def inclusive_range(*args):
+    numargs = len(args)
+    start = 0
+    step = 1
+
+    # initialize parameters
+    if numargs < 1:
+        raise TypeError(f'expected at least 1 argument, got {numargs}')
+    elif numargs == 1:  # ex. range(1) = 0, 1
+        stop = args[0]
+    elif numargs == 2:  # ex. range(1, 3) = 1, 2, 3
+        (start, stop) = args
+    elif numargs == 3:  # ex. range(1, 5, 2) = 1, 3, 5
+        (start, stop, step) = args
+    else:
+        raise TypeError(f'expected at most 3 arguments, got {numargs}')
+
+    # generator
+    i = start
+    while i <= stop:
+        yield i
+        i += step
 ```
