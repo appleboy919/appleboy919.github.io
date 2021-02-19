@@ -140,3 +140,48 @@ def inclusive_range(*args):
         yield i
         i += step
 ```
+
+## 5. Decorator
+
+- Decorator is a form of meta-programming (special type of function) which returns a **wrapper function**.
+- @_wrapperfunction_: use this function as the wrapper function
+- (In Python) Everything including functions are **objects**.
+
+```python
+def f1(f):
+    def f2():
+        print('this is before the function call')
+        f()
+        print('this is after the function call')
+    return f2
+
+# f1 takes f3 as an argument, returns and assigned that name of f3
+@f1
+def f3():
+    print('this is f3')
+
+# cannot call f2() directly, bcs f2 only exists inside the scope of f1 (f1 is a wrapper for f2)
+# f2() --> X
+
+# directly call f3() which is already wrapped by f2 in f1
+f3()
+print()
+
+# double- wrapping
+y = f1(f3)
+y()
+```
+
+```
+(Result)
+
+this is before the function call
+this is f3
+this is after the function call
+
+this is before the function call
+this is before the function call
+this is f3
+this is after the function call
+this is after the function call
+```
