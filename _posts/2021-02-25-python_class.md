@@ -177,3 +177,64 @@ Type: duck	Name: Donald	Sound: Kwawk-kwawk
 Type: dog	Name: Moly	Sound: Woof-woof
 Donald is swimming in lake
 ```
+
+## 3. Iterator
+
+- Iterator is a class that provides a sequence of items used in a loop (ex. range)
+- \_\_\_iter\_\_\_ : identifies this object as an iterator object
+- Loop uses \_\_next\_\_ for iteration
+- _yield_ (generator) is a simpler way than iterators but iterators are still common
+
+```python
+# inclusinve range iterator
+class inclusive_range:
+    def __init__(self, *args):
+        numargs = len(args)
+        self._start = 0
+        self._step = 1
+
+        if numargs < 1:
+            raise TypeError(f'expected at least 1 argument, got {numargs}')
+        elif numargs == 1:
+            self._stop = args[0]
+        elif numargs == 2:
+            (self._start, self._stop) = args
+        elif numargs == 3:
+            (self._start, self._stop, self._step) = args
+        else:
+            raise TypeError(f'expected at most 3 arguments, got {numargs}')
+
+        self._next = self._start
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self._next > self._stop:
+            raise StopIteration
+        else:
+            _r = self._next
+            self._next += self._step
+            return _r
+
+
+def main():
+    for n in inclusive_range(25):
+        print(n, end=' ')
+    print()
+
+    for n in inclusive_range(2, 10, 2):
+        print(n, end=' ')
+    print()
+
+
+if __name__ == '__main__':
+    main()
+```
+
+```
+(Result)
+
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+2 4 6 8 10
+```
