@@ -13,6 +13,12 @@ date: 2021-02-28
 last_modified_at: 2021-02-28
 ---
 
+This is a self note while taking the online course from:
+**LinkedIn Learning: Learning Python** by _Joe Marini_
+**LinkedIn Learning: Python Essential Training** by _Bill Weinman_
+
+---
+
 ## 1. Open files
 
 - open function returns a file object which is an **iterator**
