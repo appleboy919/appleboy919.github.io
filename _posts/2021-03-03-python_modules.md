@@ -379,3 +379,15 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+## 6. Creating Modules
+
+```python
+# 1. import other modules
+# 2. create a class
+'''
+    doc string for description
+'''
+
+# 3. main, test function...
+```
