@@ -276,3 +276,59 @@ Team meeting will be on:
   November  5
   December  3
 ```
+
+## 5. os module
+
+- os module provides functions for interacting with the operating system
+- commonly used functions:
+  - os.name
+  - path.exists/isfile/isdir/realpath/split
+  - path.getmtime
+
+```python
+import os
+from os import path
+import datetime
+from datetime import date, time, timedelta
+import time
+
+# print the name of the OS
+print(os.name)
+
+# check for item existence and type
+print("Item exists: " + str(path.exists("textfile.txt")))
+print("Itme is a file: " + str(path.isfile("textfile.txt")))
+print("Item is a directory: " + str(path.isdir("textfile.txt")))
+
+# work with file paths
+print("Item path: " + str(path.realpath("textfile.txt")))
+print("Item path and name: " + str(path.split(path.realpath("textfile.txt"))))
+
+# get the modification time
+# using time class to convert modification time
+t = time.ctime(path.getmtime("textfile.txt"))
+print(t)
+# construct datetime object using fromtimestamp function
+print(datetime.datetime.fromtimestamp(path.getmtime("textfile.txt")))
+
+# calculate how long ago the tiem was modified
+td = datetime.datetime.now(
+) - datetime.datetime.fromtimestamp(path.getmtime("textfile.txt"))
+print("It has been " + str(td)+" since the file was modified")
+print("Or, " + str(td.total_seconds()) + " seconds")
+```
+
+```
+(Result)
+
+posix
+Item exists: True
+Itme is a file: True
+Item is a directory: False
+Item path: /PATH.../textfile.txt
+Item path and name: ('/PATH...', 'textfile.txt')
+Wed Mar  3 17:27:30 2021
+2021-03-03 17:27:30.740000
+It has been 0:00:25.315583 since the file was modified
+Or, 25.315583 seconds
+```
