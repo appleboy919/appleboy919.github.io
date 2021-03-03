@@ -122,7 +122,6 @@ Current time: 07:57:27 AM
 
 - timedelta class allows to compute time easily
 - timedelta(days=,hours=,minutes=,...)
--
 
 ```python
 from datetime import date
@@ -151,16 +150,30 @@ print("One week ago, it was: "+s)
 ### How many days until New Year's Day? ###
 print("\nHow many days until New Year's Day?")
 today = date.today()
-afd = date(today.year, 1, 1)
+nyd = date(today.year, 1, 1)
 
 # use date comparison to see if New Year's has already gone for this year
 # if it has, use the replace() function to get the date for next year
-if afd < today:
+if nyd < today:
     print("New Year's day already went by %d days ago" %
-            ((today-afd).days))
-    afd = afd.replace(year=today.year + 1)
+            ((today-nyd).days))
+    nyd = nyd.replace(year=today.year + 1)
 
 # Now calculate the amout of time until New Year's Day
-time_to_afd = afd-today
-print("It's just", time_to_afd.days, "days until New Year's Day")
+time_to_nyd = nyd-today
+print("It's just", time_to_nyd.days, "days until New Year's Day")
+```
+
+```
+(Result)
+
+365 days, 5:01:00
+today is : 2021-03-03 08:01:08.003646
+one year from now is: 2022-03-03 08:01:08.003646
+In 2 days and 3 week is: 2021-03-26 08:01:08.003646
+One week ago, it was: Wednesday February 24, 2021
+
+How many days until New Year's Day?
+New Year's day already went by 61 days ago
+It's just 304 days until New Year's Day
 ```
