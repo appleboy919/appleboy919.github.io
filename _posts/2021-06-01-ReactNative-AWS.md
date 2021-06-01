@@ -13,9 +13,7 @@ date: 2021-06-01
 last_modified_at: 2021-06-01
 ---
 
-This is a self note while taking the online course from:
-**LinkedIn Learning: Learning Python** by _Joe Marini_
-**LinkedIn Learning: Python Essential Training** by _Bill Weinman_
+Reference: https://dev.to/dev_sahan/complete-guide-to-aws-amplify-and-react-native-4on5
 
 ---
 
