@@ -55,3 +55,8 @@ This is a self note while taking the online course from:
 
   - 1. package declaration: indicates where the file is stored in terms of the directory structure of the application (organizing the code)
   - 2. class declaration: class name + class members + main method
+
+- Identifier Conventions
+  - Classes start with an uppercase character
+  - Method, variables start with an lowercase character
+  - Constants are all uppercase
