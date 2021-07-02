@@ -10,7 +10,7 @@ tags:
 toc: true
 
 date: 2021-06-20
-last_modified_at: 2021-06-20
+last_modified_at: 2021-07-02
 ---
 
 This is a self note while taking the online course from:
