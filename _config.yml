@@ -19,7 +19,7 @@ locale: "en-US"
 title: "Coding Logs"
 title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
-name: "David Dongmin Oh"
+name: "Dongmin David Oh"
 description: "Coding is Life, Life is Coding"
 url: "https://appleboy919.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
