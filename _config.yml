@@ -92,10 +92,10 @@ analytics:
 
 # Site Author
 author:
-  name: "David Dongmin Oh"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Studying CS at UW-Madison"
-  location: "South Korea"
+  name: "Dongmin David Oh"
+  avatar: "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "Coding is life, Life is coding"
+  location: "Madison, WI, USA"
   email: "davidoh919@gmail.com"
   links:
     - label: "Email"
