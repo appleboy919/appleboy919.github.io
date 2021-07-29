@@ -28,7 +28,7 @@ This is a self note while taking the online course from:
   - applications are portable between platforms **without recompiling**
 
     Java runtime architecture:
-    ![java runtime architecture](./img/java_architecture.png)
+    ![java runtime architecture](/assets/images/java_architecture.png)
 
 - High performance
 - Interpreted, threaded, and dynamic
