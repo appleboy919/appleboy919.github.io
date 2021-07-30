@@ -96,11 +96,11 @@ author:
   avatar: "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "Coding is life, Life is coding"
   location: "Madison, WI, USA"
-  email: "davidoh919@gmail.com"
+  # email: "davidoh919@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:davidoh919@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
