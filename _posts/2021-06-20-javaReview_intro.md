@@ -62,15 +62,15 @@ This is a self note while taking the online course from:
   - Method, variables start with an lowercase character
   - Constants are all uppercase
 
-  ## 3. Memory Management in Java
+## 3. Memory Management in Java
 
-  - Java **automatically** allocates and deallocates memory as needed (in runtime)
-  - Local variables, function calls --> **Stack**
-  - Objects, member variables --> **Heap**
-  - Objects are reatained in memory **until dereferenced**
-  - After dereferenced --> _Garbage Collector_
+- Java **automatically** allocates and deallocates memory as needed (in runtime)
+- Local variables, function calls --> **Stack**
+- Objects, member variables --> **Heap**
+- Objects are reatained in memory **until dereferenced**
+- After dereferenced --> _Garbage Collector_
 
-  ### Tips for memory management:
+### Tips for memory management:
 
-  - minimize the number of objects
-  - use _System methods_ to check memory usage (_Runtime.maxMemory()_, _Runtime.totalMemory()_, ...)
+- minimize the number of objects
+- use _System methods_ to check memory usage (_Runtime.maxMemory()_, _Runtime.totalMemory()_, ...)
