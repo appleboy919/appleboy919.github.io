@@ -37,15 +37,13 @@ This is a self note while taking the online course from:
   - use applications to analyze data (**without coding**)
   - deploys analytics technologies (analytics S/W applications)
 
----
-
 ## 2. Data Science
 
 - Data Analysis: process for making sense of data
   - includes data cleaning, reformatting, and recombining data
   - discovers real-life phenomenon data
 - Data Science:
-- Artificial Intelligence: a machine or application with the capacity to autonomously execute upon predictions it makes from data
+- Artificial Intelligence: a machine or application with the capacity to **autonomously execute upon predictions** it makes from data
   1. Prediction: predictive modeling (from data science)
   2. Execution: autonomous response (from engineering)
 - Deep learning: set of predictive methodologies that borrows its structure from the _Neural Network_ structures of the brain
