@@ -52,6 +52,6 @@ This is a self note while taking the online course from:
 
 ### +) Main Python Libraries for Data Science
 
-    - Advanced Data Analysis: NumPy, SciPy, pandas
-    - Data Visualization: Matplotlib, Seaborn
-    - Machine Learning: scikit-learn, TensorFlow, Keras
+- Advanced Data Analysis: NumPy, SciPy, pandas
+- Data Visualization: Matplotlib, Seaborn
+- Machine Learning: scikit-learn, TensorFlow, Keras
