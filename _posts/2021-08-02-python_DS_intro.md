@@ -14,7 +14,7 @@ last_modified_at: 2021-08-02
 ---
 
 This is a self note while taking the online course from:
-**LinkedIn Learning: Python for Data Science Essential Training** by _Lillian Pierson_
+**LinkedIn Learning: Python for Data Science Essential Training Part 1** by _Lillian Pierson_
 
 ---
 
