@@ -49,3 +49,9 @@ This is a self note while taking the online course from:
 - Deep learning: set of predictive methodologies that borrows its structure from the _Neural Network_ structures of the brain
   - effective for **making predictions** from big data
   - can be used as a **decision model** with applications to produce deep learning AI
+
+### +) Main Python Libraries for Data Science
+
+    - Advanced Data Analysis: NumPy, SciPy, pandas
+    - Data Visualization: Matplotlib, Seaborn
+    - Machine Learning: scikit-learn, TensorFlow, Keras
