@@ -18,3 +18,8 @@ last_modified_at: 2021-08-24
 ![Java Extension Pack](/assets/images/java_extension.png)
 
 ## 2. Install JDK
+
+- Download jdk from [Oracle](https://www.oracle.com/kr/java/technologies/javase-downloads.html)
+
+- Check java and java compiler version
+  ![Java Version Check](/assets/images/java_version.png)
