@@ -10,7 +10,7 @@ tags:
 toc: true
 
 date: 2021-09-24
-last_modified_at: 2021-09-26
+last_modified_at: 2021-10-10
 ---
 
 ## 1. What is Internet?
@@ -42,3 +42,4 @@ last_modified_at: 2021-09-26
     - Packet Management
       - make sure all data packets arrived in the same order in which they are sent out
       - packet _not received_ or _received in eorror_ are retransmitted
+    - [add picture here]
