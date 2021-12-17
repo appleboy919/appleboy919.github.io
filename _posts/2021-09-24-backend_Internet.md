@@ -27,7 +27,7 @@ last_modified_at: 2021-10-10
   - Transmission Control Protocol / Internet Protocol
   - 4 Layers: Application, Transport, Internet, Network Layers
   - **Application Layer**
-    - Support for different user applications (e.g. web browsers)
+    - support for different user applications (e.g. web browsers)
     - includes HTTP, HTTPS, FTP, SMTP
       - HTTP: World Wide Web's Hypertext Transfer protocol for accessing websites from web servers
       - HTTPS: more secured version of HTTP
@@ -42,4 +42,24 @@ last_modified_at: 2021-10-10
     - Packet Management
       - make sure all data packets arrived in the same order in which they are sent out
       - packet _not received_ or _received in eorror_ are retransmitted
-    - [add picture here]
+  - **Internet Layer**
+    - provides instructions(addresses) used to transport packets across the network
+    - **IP addresses** are assigned to packets
+    - Protocols:
+      - IPv4
+      - IPv6
+    - Functions:
+      - select the **next-hop host(or gateway)**
+      - capture packets (incoming packets) and pass them to applciation
+      - error detection using checksum
+  - **Network Layer**
+    - exchange of data between **computer** and **network**
+    - Devices: **Ethernet**, Network device drivers, Switches
+  
+  - Example: request a web page from a web server
+    1. **HTTP** (application): Web browser generates request for specific files on a web server
+    2. **TCP** (transport): splits requests into **small pacekts** providing a _sequence number_ and _checksum_
+    3. **IP** (internet): **IP packets** are sent to servers (IP addresses)
+    4. **Ethernet** (network): binary data which makes up each IP packet is sent through network
+
+    
