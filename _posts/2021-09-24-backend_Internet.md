@@ -56,10 +56,21 @@ last_modified_at: 2021-10-10
     - exchange of data between **computer** and **network**
     - Devices: **Ethernet**, Network device drivers, Switches
   
-  - Example: request a web page from a web server
+  - Example: Requesting a web page from a web server
     1. **HTTP** (application): Web browser generates request for specific files on a web server
     2. **TCP** (transport): splits requests into **small pacekts** providing a _sequence number_ and _checksum_
     3. **IP** (internet): **IP packets** are sent to servers (IP addresses)
     4. **Ethernet** (network): binary data which makes up each IP packet is sent through network
 
+## 3. What is HTTP?
+
+- HyperText Transfer Protocol (HTTP)
+- uses **client-server mode** to **fetch web pages from web servers to client browsers**
+![HTTP](/assets/images/HTTP.png)
+- **specify actions** for web servers and browsers
+
+
+## 4. Domain Name Server and System
+- Domain name system locates domain names and translates into **IP addresses**
+- DNS Servers **resolves names to IP addresses**
     
