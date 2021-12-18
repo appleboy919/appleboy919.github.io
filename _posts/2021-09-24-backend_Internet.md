@@ -76,8 +76,12 @@ last_modified_at: 2021-10-10
 
 ## 5. Browsers and Hosting
 - How web browser work:
-  - 1. Process HTML markup and build the DOM tree
-  - 2. Process CSS markup and build the CSSOM tree.
-  - 3. Combine the DOM and CSSOM into a render tree.
-  - 4. Run layout on the render tree to compute geometry of each node.
-  - 5. Paint the individual nodes to the screen.
+  1. Process HTML markup and construct DOM tree
+  2. Process CSS markup and build the CSSOM tree.
+  3. Combine the DOM and CSSOM into a render tree.
+  4. Run layout on the render tree to compute geometry of each node.
+  5. Paint the individual nodes to the screen.
+
+### Construct DOM/CSSOM tree
+  - HTML markup -- transformed --> Document Object Model (**DOM**)
+  - CSS markup -- transformed --> CSS Object Model (**CSSOM**)
