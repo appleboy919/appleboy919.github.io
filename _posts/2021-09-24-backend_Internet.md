@@ -103,4 +103,13 @@ last_modified_at: 2021-10-10
 
 (Reference: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model )
 
-
+### Construct Render tree
+  - Browser combines DOM and CSSOM into **Render-tree**
+  - Steps:
+    1. Traverse each node from **DOM**'s root
+      - Some nodes (ex. script tags, span node) are omitted
+    2. Find and apply appropriate CSSOM rules for each visible nodes
+    3. Emit visible nodes (contents + styles)
+  - Still missing exact positions or sizes within the _viewport_
+    - (viewport tag: gives browsers instructions on how to control dimensions and scaling)
+  
