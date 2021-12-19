@@ -103,7 +103,7 @@ last_modified_at: 2021-10-10
 
 (Reference: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model )
 
-### Construct Render tree
+### Construct Render-tree
   - Browser combines DOM and CSSOM into **Render Tree**
   ![Render-tree](/assets/images/render-tree.png)
   (source: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction )
@@ -115,4 +115,7 @@ last_modified_at: 2021-10-10
   - Still missing exact positions or sizes within the _viewport_
     - (viewport tag: gives browsers instructions on how to control dimensions and scaling)
 
-
+### Layout (Reflow) Render-tree
+  - Build _box model_
+    - includes excact position and size of each element within viewport
+    - relative measurement --convert--> absolute pixels
