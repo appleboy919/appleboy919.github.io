@@ -75,6 +75,8 @@ last_modified_at: 2021-10-10
 - DNS Servers **resolves names to IP addresses**
 
 ## 5. Browsers and Hosting
+(Reference: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model )
+
 - How web browser work:
   1. Process HTML markup and construct DOM tree
   2. Process CSS markup and build the CSSOM tree.
@@ -82,6 +84,14 @@ last_modified_at: 2021-10-10
   4. Run layout on the render tree to compute geometry of each node.
   5. Paint the individual nodes to the screen.
 
-### Construct DOM/CSSOM tree
-  - HTML markup -- transformed --> Document Object Model (**DOM**)
+### Construct DOM tree
+  - **HTML** markup -- transformed --> Document Object Model (**DOM**)
+  - **Bytes** &rarr; **characters** &rarr; **tokens** &rarr; **nodes** &rarr; **object model**
+    - **Conversion**: browser reads the raw **bytes** of HTML, translate to **characters**
+    - **Tokenizing**: browser converts strings of **characters** into distinct **tokens** (by _HTML5 Standard_)
+    - **Lexing**: **tokens** are converted into **objects** (_properties_ + _rules_)
+    - **DOM Construction**: **obejcts** are linked in a **tree data structure** with parent-child relationship
+    ![DOM-tree](/assets/images/dom_tree.png)
+    _(source: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model)_
+  - DOM Tree includes properties and relationship of document markup, but lacks how the elements is rendered
   - CSS markup -- transformed --> CSS Object Model (**CSSOM**)
