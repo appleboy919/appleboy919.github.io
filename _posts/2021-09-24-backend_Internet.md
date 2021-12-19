@@ -120,3 +120,5 @@ last_modified_at: 2021-10-10
     - includes excact position and size of each element within viewport
     - relative measurement --convert--> absolute pixels
   - **Paint**: convert render tree to pixels on the screen
+
+(Reference: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction )
