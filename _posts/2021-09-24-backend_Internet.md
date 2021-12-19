@@ -75,16 +75,15 @@ last_modified_at: 2021-10-10
 - DNS Servers **resolves names to IP addresses**
 
 ## 5. Browsers and Hosting
-(Reference: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model )
 
 - How web browser work:
   1. Process HTML markup and construct DOM tree
   2. Process CSS markup and build the CSSOM tree.
-  3. Combine the DOM and CSSOM into a render tree.
+  3. Combine the DOM and CSSOM into a Render tree.
   4. Run layout on the render tree to compute geometry of each node.
   5. Paint the individual nodes to the screen.
 
-### Construct DOM tree
+### Construct DOM-tree
   - **HTML** markup -- transformed --> Document Object Model (**DOM**)
   - **Bytes** &rarr; **characters** &rarr; **tokens** &rarr; **nodes** &rarr; **object model**
     - **Conversion**: browser reads the raw **bytes** of HTML, translate to **characters**
@@ -93,5 +92,15 @@ last_modified_at: 2021-10-10
     - **DOM Construction**: **obejcts** are linked in a **tree data structure** with parent-child relationship
     ![DOM-tree](/assets/images/dom_tree.png)
     _(source: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model)_
-  - DOM Tree includes properties and relationship of document markup, but lacks how the elements is rendered
+  - DOM Tree includes properties and relationship of document markup, but **lacks how the elements is rendered**
+
+### Construct CSSOM-tree
   - CSS markup -- transformed --> CSS Object Model (**CSSOM**)
+  - **Bytes** &rarr; **characters** &rarr; **tokens** &rarr; **nodes** &rarr; **CSS Object Model**
+  - starts with the most general rule &rarr; **recursively apply more specific rules** (**cascade down**)
+  ![CSSOM-tree](/assets/images/cssom-tree.png)
+  (source: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model)
+
+(Reference: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model )
+
+
