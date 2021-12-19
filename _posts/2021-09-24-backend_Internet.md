@@ -115,7 +115,8 @@ last_modified_at: 2021-10-10
   - Still missing exact positions or sizes within the _viewport_
     - (viewport tag: gives browsers instructions on how to control dimensions and scaling)
 
-### Layout (Reflow) Render-tree
-  - Build _box model_
+### Layout (Reflow) Render-tree and Paint (Rasterize)
+  - **Layout**: build _box model_
     - includes excact position and size of each element within viewport
     - relative measurement --convert--> absolute pixels
+  - **Paint**: convert render tree to pixels on the screen
